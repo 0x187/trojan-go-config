@@ -1,0 +1,32 @@
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 443,
+    "remote_addr": "SERVERIP",
+    "remote_port": NGINXPORT,
+    "password": [
+        "qasem"
+    ],
+    "websocket": {
+    "enabled": true,
+    "path": "/",
+    "hostname": "DOMIN.IR"
+    },
+    "ssl": {
+        "cert": "/root/.acme.sh/.cer",
+        "key": "/root/.acme.sh/.key",
+        "sni": "DOMIN.IR",
+        "fingerprint": "Chrome"
+    },
+    "router": {
+        "enabled": true,
+        "block": [
+            "geoip:private"
+        ],
+        "geoip": "/usr/share/trojan-go/geoip.dat",
+        "geosite": "/usr/share/trojan-go/geosite.dat"
+    }
+}
+
+
+

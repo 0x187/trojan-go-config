@@ -1,0 +1,35 @@
+{
+    "run_type": "client",
+    "local_addr": "127.0.0.1",
+    "local_port": 443,
+    "remote_addr": "DOMIN.IR",
+    "remote_port": NGINIXPORT,
+    "password": [
+        "qasem"
+    ],
+    "ssl": {
+         "sni": "DOMIN.IR"
+         "fingerprint": "Chrome"
+    },
+    "mux": {
+        "enabled": true
+    },
+    "router": {
+        "enabled": true,
+        "bypass": [
+            "geoip:cn",
+            "geoip:private",
+            "geosite:cn",
+            "geosite:private"
+        ],
+        "block": [
+            "geosite:category-ads"
+        ],
+        "proxy": [
+            "geosite:geolocation-!cn"
+        ],
+        "default_policy": "proxy",
+        "geoip": "/usr/share/trojan-go/geoip.dat",
+        "geosite": "/usr/share/trojan-go/geosite.dat"
+    }
+}

@@ -13,8 +13,8 @@
     "hostname": "DOMIN.IR"
     },
     "ssl": {
-        "cert": "/root/.acme.sh/.cer",
-        "key": "/root/.acme.sh/.key",
+        "cert": "DOMIN.cer",
+        "key": "DOMIN.key",
         "sni": "DOMIN.IR",
         "fingerprint": "Chrome"
     },

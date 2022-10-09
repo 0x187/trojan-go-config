@@ -5,7 +5,7 @@
     "remote_addr": "DOMIN.IR",
     "remote_port": NGINIXPORT,
     "password": [
-        "qasem"
+        "GASEMM"
     ],
     "ssl": {
          "sni": "DOMIN.IR"

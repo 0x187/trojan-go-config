@@ -2,7 +2,7 @@
     "run_type": "server",
     "local_addr": "0.0.0.0",
     "local_port": 443,
-    "remote_addr": "SERVERIP",
+    "remote_addr": "127.0.0.1",
     "remote_port": NGINXPORT,
     "password": [
         "qasem"
@@ -16,14 +16,6 @@
         "cert": "DOMIN.cer",
         "key": "DOMIN.key",
         "sni": "DOMIN.IR"
-    },
-    "router": {
-        "enabled": true,
-        "block": [
-            "geoip:private"
-        ],
-        "geoip": "/usr/share/trojan-go/geoip.dat",
-        "geosite": "/usr/share/trojan-go/geosite.dat"
     }
 }
 

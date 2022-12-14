@@ -15,8 +15,7 @@
     "ssl": {
         "cert": "DOMIN.cer",
         "key": "DOMIN.key",
-        "sni": "DOMIN.IR",
-        "fingerprint": "Chrome"
+        "sni": "DOMIN.IR"
     },
     "router": {
         "enabled": true,
